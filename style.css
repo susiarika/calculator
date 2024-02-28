@@ -1,0 +1,85 @@
+.calculator{
+    width: 300px;
+    background-color: rgb(25, 70, 167);
+    margin: 50px auto 10px auto;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+#layar{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #070707;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(60, 26, 139);
+    padding: 7px 5px;
+    text-align: right;
+    outline: none;
+}
+
+.container-tombol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tombol{
+    display: flex;
+    width: 25%;
+    font-size: 20px;
+    color: rgb(22, 23, 24);
+    font-weight: bold;
+    height: 70px;
+    border: 1px solid #070707;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.tombol:nth-child(4n+1){
+    border-left: 1px solid #070707;
+}
+
+.tombol:hover{
+    background-color: #bee023;
+    cursor: pointer;
+}
+
+#nol{
+    flex-grow: 2;
+}
+#operator{
+    background-color: #2a2dcc;
+}
+#operator:hover{
+    background-color: #4affc3;
+    cursor: pointer;
+}
+#hitung{
+    background-color: #ffc64a;
+    color: white;
+}
+#hitung:hover{
+    background-color: #4a4dff;
+    cursor: pointer;
+}
+footer{
+    padding: 5px;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color: black;
+}
+
+/*HP*/
+@media(max-width:576px){
+    .calculator{
+        width: 90%;
+        height: 90%;
+    }
+}
